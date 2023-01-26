@@ -99,7 +99,7 @@ int main (int argc, char *argv[]) {
 
 		case 2:
 
-            if ( ( wordbuffercnt>1 ) && ( rd==' '  || rd=='.' || rd==',' || rd==';' ) ) { // found VeralAcro...
+            if ( ( wordbuffercnt>1 ) && ( rd==' '  || rd=='.' || rd==',' || rd==';' || rd=='\r' || rd=='\n' || rd=='\t'  ) ) { // found VeralAcro...
 				if (inDb(wordbuffer)) {
 					wordbuffercnt = 0;
 				}
